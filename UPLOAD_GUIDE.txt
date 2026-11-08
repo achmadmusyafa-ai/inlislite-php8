@@ -1,0 +1,16 @@
+PANDUAN UPLOAD KE HOSTING
+=========================
+
+1. Upload seluruh folder proyek ke public_html (via FTP/File Manager).
+2. Pastikan struktur: public_html/index.php, public_html/backend/, dll.
+3. Di hosting, hapus common/config/main-local.php lalu rename main-local-hosting.php -> main-local.php, isi kredensial DB hosting.
+4. Import database: phpMyAdmin hosting -> Import -> db_clean_for_hosting.sql (ada di backend/_backup/).
+5. Buat akun staff (jalankan users_insert.sql atau SQL di panduan).
+6. Set permission writable (755/777): runtime/, backend/runtime/, web/assets/, backend/web/assets/, uploaded_files/.
+7. Pastikan .htaccess ada di root dan backend/.
+8. Tes: https://domain.com/ dan https://domain.com/backend/ (login: superadmin / Admin@123).
+
+Catatan:
+- Hosting harus PHP 8.2+ dan MySQL/MariaDB.
+- Jika error 500, cek backend/runtime/logs/app.log.
+- File db_clean_for_hosting.sql sudah bersih dari DEFINER dan single-row insert.

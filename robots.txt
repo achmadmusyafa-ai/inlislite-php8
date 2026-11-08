@@ -1,0 +1,40 @@
+# robots.txt - inlislite.balikpapanislamicschool.sch.id
+# Diperbarui: 2026-11-02 (pembersihan pasca-kompromi)
+
+User-agent: *
+Allow: /
+
+# --- Area internal / teknis, jangan diindeks ---
+Disallow: /backend/
+Disallow: /api/
+Disallow: /console/
+Disallow: /tests/
+Disallow: /environments/
+Disallow: /runtime/
+Disallow: /vendor/
+Disallow: /common/
+Disallow: /db/
+Disallow: /article/runtime/
+Disallow: /opac/runtime/
+Disallow: /frontend/runtime/
+
+# --- Folder upload: file tetap bisa dibuka pengunjung, tapi tidak untuk mesin pencari ---
+Disallow: /uploaded_files/
+Disallow: /temporary/
+
+# --- Sisa pola URL spam judi (doorway) ---
+Disallow: /*?gacor=
+Disallow: /*&gacor=
+Disallow: /*?id_ID=
+Disallow: /*&id_ID=
+Disallow: /*?zdc=
+Disallow: /*?cmd=
+Disallow: /topic/
+Disallow: /stoto/
+
+# Halaman yang boleh diindeks
+Allow: /$
+Allow: /opac/
+Allow: /article/
+Allow: /digitalcollection/
+Allow: /keanggotaan/

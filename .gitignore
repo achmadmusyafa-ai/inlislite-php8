@@ -1,0 +1,41 @@
+# Yii2
+/vendor/
+/runtime/
+/backend/runtime/
+/web/assets/
+/backend/web/assets/
+/frontend/web/assets/
+/opac/assets/
+/digitalcollection/assets/
+/guestbook/assets/
+/keanggotaan/assets/
+/bacaditempat/assets/
+/peminjamanmandiri/assets/
+/pengembalianmandiri/assets/
+/keanggotaan/assets/
+/assets/
+/uploaded_files/
+*.log
+.env
+.env.local
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Temp
+*.tmp
+*.bak
+*.sql
+/backend/_backup/
+
+# published assets (regenerated)
+**/assets/[a-f0-9]*/
+**/web/assets/[a-f0-9]*/
+api.7z

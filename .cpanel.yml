@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bisa4294/public_html/khizanahalhikmah.bis.sch.id
+    - /bin/cp -R * $DEPLOYPATH

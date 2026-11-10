@@ -261,7 +261,7 @@ class AnggotaController extends \yii\web\Controller
             $options = ArrayHelper::map($data,'kec','kec');
             // $options2 = \yii\helpers\ArrayHelper::merge(["0"=>"---Semua---"],$options);
             $options[null] = yii::t('app',' ---Semua---');
-            $options[XI] = " Kosong";
+            $options['XI'] = " Kosong";
             asort($options);
 
             $contentOptions = Html::dropDownList( $kriteria.'[]',
@@ -277,7 +277,7 @@ class AnggotaController extends \yii\web\Controller
             $options = ArrayHelper::map($data,'kel','kel');
             // $options2 = \yii\helpers\ArrayHelper::merge(["0"=>"---Semua---"],$options);
             $options[null] = yii::t('app',' ---Semua---');
-            $options[XI] = " Kosong";
+            $options['XI'] = " Kosong";
             asort($options);
 
             $contentOptions = Html::dropDownList( $kriteria.'[]',

@@ -127,7 +127,7 @@ public function actionLoadFilterKriteria($kriteria)
             $data = Yii::$app->db->createCommand($sql)->queryAll(); 
             $options = ArrayHelper::map($data,'test','namakelas');
             $options[null] = yii::t('app',' ---Semua---');
-            $options[XI] = " Lainnya";
+            $options['XI'] = " Lainnya";
             asort($options);
             // echo '<pre>';print_r($options);echo '</pre>';die;
             $contentOptions = Html::dropDownList( $kriteria.'[]',

@@ -282,7 +282,7 @@ class KoleksiController extends \yii\web\Controller
             $data = Yii::$app->db->createCommand($sql)->queryAll(); 
             $options = ArrayHelper::map($data,'test','namakelas');
             $options[null] = yii::t('app','---Semua---');
-            $options[XI] = yii::t('app',' Lainnya');
+            $options['XI'] = yii::t('app',' Lainnya');
             asort($options);
             // echo '<pre>';print_r($options);echo '</pre>';die;
             $contentOptions = '<div class="input-group">'.Html::dropDownList(  $kriteria.'[]',

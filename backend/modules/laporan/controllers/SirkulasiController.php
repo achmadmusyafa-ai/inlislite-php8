@@ -389,7 +389,7 @@ class SirkulasiController extends \yii\web\Controller
             $data = Yii::$app->db->createCommand($sql)->queryAll(); 
             $options = ArrayHelper::map($data,'test','namakelas');
             $options[null] = yii::t('app','---Semua---');
-            $options[XI] = yii::t('app',' Lainnya');
+            $options['XI'] = yii::t('app',' Lainnya');
             asort($options);
             // echo '<pre>';print_r($options);echo '</pre>';die;
             $contentOptions = '<div class="input-group">'.Html::dropDownList(  $kriteria.'[]',
@@ -579,7 +579,7 @@ class SirkulasiController extends \yii\web\Controller
             $options = ArrayHelper::map($data,'kec','kec');
             // $options2 = \yii\helpers\ArrayHelper::merge(["0"=>"---Semua---"],$options);
             $options[null] = yii::t('app',' ---Semua---');
-            $options[XI] = yii::t('app',' Kosong');
+            $options['XI'] = yii::t('app',' Kosong');
             asort($options);
 
             $contentOptions = Html::dropDownList( $kriteria.'[]',
@@ -595,7 +595,7 @@ class SirkulasiController extends \yii\web\Controller
             $options = ArrayHelper::map($data,'kel','kel');
             // $options2 = \yii\helpers\ArrayHelper::merge(["0"=>yii::t('app',' ---Semua---')],$options);
             $options[null] = yii::t('app',' ---Semua---');
-            $options[XI] = yii::t('app',' Kosong');
+            $options['XI'] = yii::t('app',' Kosong');
             asort($options);
 
             $contentOptions = Html::dropDownList( $kriteria.'[]',
@@ -625,7 +625,7 @@ class SirkulasiController extends \yii\web\Controller
             $data = Yii::$app->db->createCommand($sql)->queryAll(); 
             $options = ArrayHelper::map($data,'ID','Name');
             $options[null] = yii::t('app',' ---Semua---');
-            $options[XI] = yii::t('app',' Kosong');
+            $options['XI'] = yii::t('app',' Kosong');
             asort($options);
             $options = array_filter($options);
 
@@ -687,7 +687,7 @@ class SirkulasiController extends \yii\web\Controller
             $data = Yii::$app->db->createCommand($sql)->queryAll(); 
             $options = ArrayHelper::map($data,'ID','InstitutionName');
             $options[null] = yii::t('app',' ---Semua---');
-            $options[XI] = yii::t('app',' Kosong');
+            $options['XI'] = yii::t('app',' Kosong');
             asort($options);
             $options = array_filter($options);
 
